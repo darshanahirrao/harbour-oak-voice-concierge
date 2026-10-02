@@ -6,6 +6,14 @@ Built by **GrowthForge AI** using ElevenLabs Agents, Twilio and a dedicated Goog
 
 [See the project on GrowthForge AI](https://growthforgeai.com/voice-concierge)
 
+## Hear two complete conversations
+
+- [Lighting enquiry to consultation](recordings/maya-lighting-consultation.mp3): Maya compares two concepts, confirms a corrected email and preferred callback, asks invitation permission and illustrates a successful demo booking.
+- [Landline email recovery](recordings/maya-landline-recovery.mp3): Maya helps with storage, recognises an uncertain email and retains a confirmed callback request for human review.
+- [Read both complete scripts](recordings/scripted-scenarios.json) or [read the recording notes and transcripts](recordings/README.md).
+
+These are **scripted two-voice TTS simulations**, produced with Eleven v4: Lucy as Maya and Roger as the caller. They are performed scripts, not autonomous agent-to-agent tests or customer calls. Calendar and operator outcomes in the scripts are illustrative; generating or listening to these recordings creates no actual event or callback request. Their timing does not measure live-agent latency, interruptions or background-noise handling.
+
 ## Hear a real phone test
 
 - [Design discovery, 32-second excerpt](recordings/maya-design-discovery.mp3): a caller wants a modern kitchen with more storage and easier cleaning. Maya recommends a relevant style and asks about the practical priority.
@@ -53,7 +61,7 @@ Live transfer, SMS, payments, CRM, Make, M365 and outbound qualification are not
 
 ## What this repository contains
 
-This is a **public case study**, with architecture notes, reviewed audio excerpts, transcripts and a test guide. It deliberately contains no executable live agent, operational prompt export, service credentials, integration exports, calendar identifiers, callable demo number or live agent share link. The operational build remains private.
+This is a **public case study**, with architecture notes, complete scripted conversations, original phone excerpts, transcripts and a test guide. It deliberately contains no executable live agent, operational prompt export, service credentials, integration exports, calendar identifiers, callable demo number or live agent share link. The operational build remains private.
 
 To check the publication boundary locally, use Python 3:
 

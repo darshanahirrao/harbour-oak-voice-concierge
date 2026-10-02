@@ -7,9 +7,10 @@
 | Two earlier inbound Twilio phone tests | The earlier agent answered a real telephone call and held a design conversation | Current voice quality, all noise conditions, universal transcription accuracy or booking completion |
 | Owner-only live booking test | A real 20-minute event was created on the dedicated demo calendar with returned meeting details | Independently verified inbox receipt or a customer deployment |
 | Later targeted scenario, four criteria passed with mocked tools | The scripted conversation satisfied that evaluation's configured contact, consent and booking criteria | A new live event, real carrier audio, deterministic enforcement or complete coverage |
+| Two complete scripted Eleven v4 TTS conversations | The intended advice, contact repair, consent and fallback sequence can be heard with distinct voices | Autonomous agent behaviour, live action execution, carrier quality, latency or noise resilience |
 | Historical scenario checks on earlier revisions | Particular correction, timing and failure cases were exercised during iteration | Certification of the current revision or measured customer results |
 
-Raw conversation exports, attendee information, event identifiers and account screenshots stay private. The public excerpts contain no spoken email addresses or phone numbers.
+Raw conversation exports, attendee information, event identifiers and account screenshots stay private. The original phone excerpts contain no spoken email addresses or phone numbers. The scripted TTS conversations contain only fictional names, an example.com address and reserved drama numbers.
 
 ## Acceptance scenarios for a client pilot
 

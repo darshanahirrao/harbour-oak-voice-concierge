@@ -17,7 +17,7 @@ There is no custom application server in this build. This repository does not co
 | Actions | Native calendar availability and event creation | Check one dedicated calendar and create a clearly labelled demo consultation |
 | Review | Structured post-call analysis | Preserve confirmed details, request summary, booking outcome and unresolved items |
 
-The current voice configuration was published after the included phone recording. The recording is not a measurement of this configuration's voice quality or latency.
+The current voice configuration was published after the included phone recording. The complete scripted stories use Lucy with Eleven v4 TTS and a distinct caller voice. They illustrate the procedure with mocked outcomes. Neither the earlier phone excerpts nor the scripted TTS files measure the current deployed configuration's live latency.
 
 ## Action boundary
 
