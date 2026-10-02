@@ -14,14 +14,6 @@ Built by **GrowthForge AI** using ElevenLabs Agents, Twilio and a dedicated Goog
 
 These are **scripted two-voice TTS simulations**, produced with Eleven v4: Lucy as Maya and Roger as the caller. They are performed scripts, not autonomous agent-to-agent tests or customer calls. Calendar and operator outcomes in the scripts are illustrative; generating or listening to these recordings creates no actual event or callback request. Their timing does not measure live-agent latency, interruptions or background-noise handling.
 
-## Hear a real phone test
-
-- [Design discovery, 32-second excerpt](recordings/maya-design-discovery.mp3): a caller wants a modern kitchen with more storage and easier cleaning. Maya recommends a relevant style and asks about the practical priority.
-- [Opening and disclosure, 11-second excerpt](recordings/maya-introduction.mp3): Maya introduces herself and identifies the AI demo and recording.
-- [Read the transcripts and recording notes](recordings/README.md).
-
-Both are excerpts from the same owner-made inbound Twilio call on 2 October 2026. They retain the conversation's original timing and pauses. Only excerpt boundaries and audio container metadata were edited. They use an **earlier voice revision**; the later Lucy voice configuration has not been independently auditioned over the phone. The excerpts show discovery, not a completed calendar booking.
-
 These are static files. Listening does not connect to the agent or consume voice-agent credits.
 
 ## What the demonstration can do
@@ -52,7 +44,6 @@ The agent uses native speech recognition, turn handling and a language model, wi
 
 ## Evidence and limits
 
-- Two real inbound phone tests were recorded on an earlier agent revision. This repository includes two excerpts from one of them.
 - An earlier owner-only live test created a real 20-minute demo calendar event and returned meeting details. Email inbox receipt was not independently verified.
 - A later targeted workflow evaluation passed its four configured criteria with **mocked tools**. Historical checks on previous revisions are not an acoustic assessment of the current voice.
 - No customer conversion, latency, transcription-accuracy or revenue metric is claimed.
@@ -61,7 +52,7 @@ Live transfer, SMS, payments, CRM, Make, M365 and outbound qualification are not
 
 ## What this repository contains
 
-This is a **public case study**, with architecture notes, complete scripted conversations, original phone excerpts, transcripts and a test guide. It deliberately contains no executable live agent, operational prompt export, service credentials, integration exports, calendar identifiers, callable demo number or live agent share link. The operational build remains private.
+This is a **public case study**, with architecture notes, complete scripted conversations, transcripts and a test guide. It deliberately contains no executable live agent, operational prompt export, service credentials, integration exports, calendar identifiers, callable demo number or live agent share link. The operational build remains private.
 
 To check the publication boundary locally, use Python 3:
 

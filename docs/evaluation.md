@@ -10,7 +10,7 @@
 | Two complete scripted Eleven v4 TTS conversations | The intended advice, contact repair, consent and fallback sequence can be heard with distinct voices | Autonomous agent behaviour, live action execution, carrier quality, latency or noise resilience |
 | Historical scenario checks on earlier revisions | Particular correction, timing and failure cases were exercised during iteration | Certification of the current revision or measured customer results |
 
-Raw conversation exports, attendee information, event identifiers and account screenshots stay private. The original phone excerpts contain no spoken email addresses or phone numbers. The scripted TTS conversations contain only fictional names, an example.com address and reserved drama numbers.
+Raw conversation exports, attendee information, event identifiers and account screenshots stay private. The published scripted TTS conversations contain only fictional names, an example.com address and reserved drama numbers.
 
 ## Acceptance scenarios for a client pilot
 
