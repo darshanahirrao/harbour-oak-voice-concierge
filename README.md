@@ -1,0 +1,70 @@
+# Maya, the Harbour & Oak voice concierge
+
+A phone receptionist that helps a caller explore a design idea, confirms the exact contact details and arranges a useful next step.
+
+Built by **GrowthForge AI** using ElevenLabs Agents, Twilio and a dedicated Google Calendar. Harbour & Oak is a fictional kitchen and lighting studio. This is a demonstration build, not a customer deployment or an operating showroom.
+
+[See the project on GrowthForge AI](https://growthforgeai.com/voice-concierge)
+
+## Hear a real phone test
+
+- [Design discovery, 32-second excerpt](recordings/maya-design-discovery.mp3): a caller wants a modern kitchen with more storage and easier cleaning. Maya recommends a relevant style and asks about the practical priority.
+- [Opening and disclosure, 11-second excerpt](recordings/maya-introduction.mp3): Maya introduces herself and identifies the AI demo and recording.
+- [Read the transcripts and recording notes](recordings/README.md).
+
+Both are excerpts from the same owner-made inbound Twilio call on 2 October 2026. They retain the conversation's original timing and pauses. Only excerpt boundaries and audio container metadata were edited. They use an **earlier voice revision**; the later Lucy voice configuration has not been independently auditioned over the phone. The excerpts show discovery, not a completed calendar booking.
+
+These are static files. Listening does not connect to the agent or consume voice-agent credits.
+
+## What the demonstration can do
+
+| Caller need | Behaviour |
+| --- | --- |
+| Explore a kitchen, lighting or storage idea | Give a relevant recommendation from a small, clearly illustrative catalogue. Stay with the caller's requested scope. |
+| Correct an email address | Repair only the uncertain part, preserve punctuation and obtain fresh approval of the complete address. |
+| Call from a landline | Use spoken confirmation. If two repairs still leave the email uncertain, record a preferred callback request for human verification. No SMS dependency. |
+| Arrange a consultation | Agree a future 20-minute slot, obtain explicit invitation consent, check the dedicated calendar and create one demo event. |
+| Ask for a person | Record an enquiry for operator review and stop booking intake. A callback request is not a connected live transfer. |
+| Encounter a failed or uncertain tool result | State that the booking is unconfirmed. Do not invent success or blindly retry a timed-out creation. |
+
+## How it is built
+
+```mermaid
+flowchart LR
+    Caller[Caller on a phone] --> Carrier[Twilio]
+    Carrier --> Voice[ElevenLabs conversation]
+    Voice --> Calendar[Dedicated demo Google Calendar]
+    Voice --> Record[Structured conversation record]
+    Record --> Review[Operator review]
+```
+
+The agent uses native speech recognition, turn handling and a language model, with a scoped knowledge base and native calendar tools. The current configuration uses Eleven v4 Turbo, Lucy, Scribe v2 Realtime and GPT-6.1 Sol. These are configuration facts, not a claim that this repository runs those services.
+
+[Architecture and integration boundaries](docs/architecture.md) · [Contact and booking procedure](docs/contact-and-booking.md) · [Evaluation evidence and test guide](docs/evaluation.md)
+
+## Evidence and limits
+
+- Two real inbound phone tests were recorded on an earlier agent revision. This repository includes two excerpts from one of them.
+- An earlier owner-only live test created a real 20-minute demo calendar event and returned meeting details. Email inbox receipt was not independently verified.
+- A later targeted workflow evaluation passed its four configured criteria with **mocked tools**. Historical checks on previous revisions are not an acoustic assessment of the current voice.
+- No customer conversion, latency, transcription-accuracy or revenue metric is claimed.
+
+Live transfer, SMS, payments, CRM, Make, M365 and outbound qualification are not connected in this demonstration. They require a separately scoped implementation and acceptance testing. Native procedure eligibility is evaluated by the language model; it is not a deterministic server-side validation gate.
+
+## What this repository contains
+
+This is a **public case study**, with architecture notes, reviewed audio excerpts, transcripts and a test guide. It deliberately contains no executable live agent, operational prompt export, service credentials, integration exports, calendar identifiers, callable demo number or live agent share link. The operational build remains private.
+
+To check the publication boundary locally, use Python 3:
+
+```sh
+python3 scripts/check_publication.py
+```
+
+The check scans public text and rejects credential-like data, operational identifiers, live agent destinations and unapproved media. It does not make external requests or spend API credits.
+
+## Discuss a build for your business
+
+[Book a conversation with GrowthForge AI](https://cal.com/growthforgeai/30min) or visit [growthforgeai.com](https://growthforgeai.com/).
+
+Documentation and recordings are © 2026 GrowthForge AI. All rights reserved. This portfolio repository is available for viewing; it does not grant redistribution rights to the recorded voices.
